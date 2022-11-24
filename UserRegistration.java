@@ -36,7 +36,7 @@ public class UserRegistration {
 
 		System.out.println("Enter email id : ");
 		String emailid = sc.next();
-		String regex3 = "^[a-z]{3,}(.[a-z]*)?@([a-z]){2,}.[a-z]+(.in)*";
+		String regex3 = "^[a-zA-Z0-9]+([._+-][a-zA-Z0-9]+)*@[0-9a-zA-Z]+.[a-zA-Z]{2,4}+([.][a-zA-Z]{2,3})?$";
 
 		Pattern p3 = Pattern.compile(regex3);
 		Matcher match3 = p3.matcher(emailid);
