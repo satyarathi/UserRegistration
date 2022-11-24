@@ -18,10 +18,24 @@ public class UserRegistration {
 		if (match1.matches()) {
 			System.out.println("First name is correct");
 		}else {
-			System.out.println("Invalid name, Enter again");
+			System.out.println("Invalid name");
+		}
+
+		System.out.println("Enter last name : ");
+		String lname = sc.next();
+		String regex2 = "^[A-Za-z]{3,}";
+
+		Pattern p2 = Pattern.compile(regex2);
+		Matcher match2 = p2.matcher(lname);
+
+		if (match2.matches()) {
+			System.out.println("Last name is correct");
+		}else {
+			System.out.println("Invalid name");
 		}
 
 		
+	
 	}
 
 }
