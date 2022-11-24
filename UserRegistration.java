@@ -47,7 +47,18 @@ public class UserRegistration {
 			System.out.println("Invalid Email id");
 		}
 
-		
+		System.out.println("Enter Mobile number : ");
+		String mobilenumber = sc.next();
+		String regex4 = "^(\\\\d{1,2}( )?)\\\\d{10}$";
+
+		Pattern p4 = Pattern.compile(regex4);
+		Matcher match4 = p4.matcher(mobilenumber);
+
+		if (match2.matches()) {
+			System.out.println("Mobile no is correct");
+		}else {
+			System.out.println("Invalid Mobile no");
+		}
 	
 	}
 
