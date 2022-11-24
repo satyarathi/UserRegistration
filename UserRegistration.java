@@ -18,7 +18,7 @@ public class UserRegistration {
 		if (match1.matches()) {
 			System.out.println("First name is correct");
 		}else {
-			System.out.println("Invalid name");
+			System.out.println("Invalid name, Enter again");
 		}
 
 		
