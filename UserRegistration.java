@@ -34,6 +34,19 @@ public class UserRegistration {
 			System.out.println("Invalid name");
 		}
 
+		System.out.println("Enter email id : ");
+		String emailid = sc.next();
+		String regex3 = "^[a-z]{3,}(.[a-z]*)?@([a-z]){2,}.[a-z]+(.in)*";
+
+		Pattern p3 = Pattern.compile(regex3);
+		Matcher match3 = p3.matcher(emailid);
+
+		if (match3.matches()) {
+			System.out.println("Email id is correct");
+		}else {
+			System.out.println("Invalid Email id");
+		}
+
 		
 	
 	}
