@@ -62,7 +62,7 @@ public class UserRegistration {
 	
 		System.out.println("Enter password : ");
 		String password = sc.next();
-		String regex5 = "(?=.{8,}).*[A-Z].*";
+		String regex5 = "(?=.*[A-Z])(?=.*[0-9]).{8,}";
 
 		Pattern p5 = Pattern.compile(regex5);
 		Matcher match5 = p5.matcher(password);
